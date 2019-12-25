@@ -1,0 +1,27 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    properties:
+#      javax:
+#        persistence:
+#          schema-generation:
+#            create-source: metadata
+#            scripts:
+#              action: create
+#              create-target: src/main/resources/ddl_jpa_creation.sql
+      hibernate:
+        use_sql_comments: true
+        format_sql: true
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+  datasource:
+    url: jdbc:h2:./test
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  flyway:
+    enabled: true

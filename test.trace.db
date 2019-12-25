@@ -1,0 +1,4 @@
+2019-12-25 18:18:47 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "CUSTOMER" не найдена
+Table "CUSTOMER" not found; SQL statement:
+alter table customer drop column email [42102-200]

@@ -1,0 +1,2 @@
+ALTER TABLE teacher
+ADD COLUMN surname VARCHAR(15) AFTER name;
